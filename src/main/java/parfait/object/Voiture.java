@@ -2,13 +2,26 @@ package parfait.object;
 
 public class Voiture {
 
+	// Name of the car
 	private String name;
+	// Brand of the car
 	private String brand;
 
+	/**
+	 * Constructor
+	 * @param name The name
+	 * @param brand The brand
+	 */
+	public Voiture(String name, String brand) {
+		super();
+		this.name = name;
+		this.brand = brand;
+	}
+
 	/**	
-	 * Returns the name
+	 * Gets the name
 	 * 
-	 * @return
+	 * @return The car name
 	 */
 	public String getName() {
 		return name;
@@ -24,7 +37,7 @@ public class Voiture {
 	}
 
 	/**
-	 * Returns the brand
+	 * Gets the brand
 	 * 
 	 * @return The brand
 	 */
