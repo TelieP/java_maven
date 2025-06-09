@@ -2,6 +2,8 @@ package parfait;
 
 import java.util.Arrays;
 
+import parfait.object.Voiture;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class Main {
 		System.out.println(pseudos[2]);
 
 		// boucle for pour afficher les nombe de 1 à 20
-		// JAMAIS de <= 
+		// JAMAIS de <=
 		for (int i = 1; i <= 20; i++) {
 			System.out.println("ceci  est un tour de boucle numéro" + " " + i);
 
@@ -38,6 +40,34 @@ public class Main {
 		int[] numbers = { 2, 4, 6, 8, 10, 12, 99, 201 };
 		System.out.println(Arrays.toString(numbers));
 		System.out.println(numbers.length);
+
+		/***********************************/
+		/************** OBJETS *************/
+		/***********************************/
+
+		// Création de 2 voitures
+		Voiture v1 = new Voiture("v1", "b1");
+		Voiture v2 = new Voiture("v2", "b2");
+
+		// Création d'un tableau de type Voiture
+		Voiture[] voitures = new Voiture[2];
+
+		// Ajout des 2 voitures au tableaux
+		voitures[0] = v1;
+		voitures[1] = v2;
+
+		// Boucle sur le tableau voitures qui affiche le nom de la voiture et sa marque
+		// On y accède par les get de la classe Voiture
+		for (Voiture voiture : voitures) {
+			System.out.println("Mon nom de voiture est " + voiture.getName() 
+				+ " et ma marque est " + voiture.getBrand());
+		}
+		
+		// Vieille solution moche
+		for (int i = 0; i < voitures.length; i++) {
+			System.out.println("Mon nom de voiture est " + voitures[i].getName() 
+			+ " et ma marque est " + voitures[i].getBrand());
+		}
 
 	}
 
