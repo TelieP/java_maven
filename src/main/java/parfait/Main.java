@@ -2,6 +2,8 @@ package parfait;
 
 import java.util.Arrays;
 
+import parfait.object.Voiture;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -41,4 +43,20 @@ public class Main {
 
 	}
 
+	
+	Voiture V1 = new Voiture("Audi",  "A3");
+	
+	Voiture V2= new Voiture("KIA", "picanto");
+	
+	Voiture[] voitures= new Voiture[2];
+	
+	// Vieille solution moche
+	for (int i = 0; i < voitures.length; i++) {
+	    System.out.println("Mon nom de voiture est " + voitures[i].getName() 
+	            + " et ma marque est " +               voitures[i].getBrand());
+	}
+	
+	
+	
+	
 }
