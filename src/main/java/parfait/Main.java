@@ -59,32 +59,30 @@ public class Main {
 		// Boucle sur le tableau voitures qui affiche le nom de la voiture et sa marque
 		// On y accède par les get de la classe Voiture
 		for (Voiture voiture : voitures) {
-			System.out.println("Mon nom de voiture est " + voiture.getName() 
-				+ " et ma marque est " + voiture.getBrand());
+			System.out
+					.println("Mon nom de voiture est " + voiture.getName() + " et ma marque est " + voiture.getBrand());
 		}
-		
+
 		// Vieille solution moche
 		for (int i = 0; i < voitures.length; i++) {
-			System.out.println("Mon nom de voiture est " + voitures[i].getName() 
-			+ " et ma marque est " + voitures[i].getBrand());
+			System.out.println(
+					"Mon nom de voiture est " + voitures[i].getName() + " et ma marque est " + voitures[i].getBrand());
 		}
 
 	}
 
-	
-	Voiture V1 = new Voiture("Audi",  "A3");
-	
-	Voiture V2= new Voiture("KIA", "picanto");
-	
-	Voiture[] voitures= new Voiture[2];
-	
+	Voiture V1 = new Voiture("Audi", "A3");
+
+	Voiture V2 = new Voiture("KIA", "picanto");
+
+	Voiture[] voitures = new Voiture[2];
+
 	// Vieille solution moche
-	for (int i = 0; i < voitures.length; i++) {
-	    System.out.println("Mon nom de voiture est " + voitures[i].getName() 
-	            + " et ma marque est " +               voitures[i].getBrand());
+	for(int i = 0;i<voitures.length;i++) {
+
+		System.out.println(
+				"Mon nom de voiture est " + voitures[i].getName() + " et ma marque est " + voitures[i].getBrand());
+
 	}
-	
-	
-	
-	
+
 }
